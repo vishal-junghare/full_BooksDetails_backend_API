@@ -1,0 +1,44 @@
+###
+GET http://localhost:3000/profile/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzMyNjg2MjIzfQ.oK5TaOh2wcHwRcEf9Mmo3hQVIybjB3ullK7H9Rl1AOE
+
+
+###
+GET http://localhost:3000/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzMyNjg2MjIzfQ.oK5TaOh2wcHwRcEf9Mmo3hQVIybjB3ullK7H9Rl1AOE
+# Http Headers 
+###
+
+###
+GET http://localhost:3000/books/4/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJhaHVsMTIzIiwiaWF0IjoxNzMyNjg2MjIzfQ.oK5TaOh2wcHwRcEf9Mmo3hQVIybjB3ullK7H9Rl1AOE 
+###
+
+GET http://localhost:3000/books/4/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpc2hhbDEyMyIsImlhdCI6MTczMjY4OTg1MX0.SiATPVpsOzWaUdKt01nOL2_0aZElEVXEYDSRFDojAw4 
+
+
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"vishal",
+    "username":"vishal123",
+    "password": "vishal@456",
+    "gender": "Male",
+    "location":"chandrapur"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"vishal123",
+    "password": "vishal@456"
+}
